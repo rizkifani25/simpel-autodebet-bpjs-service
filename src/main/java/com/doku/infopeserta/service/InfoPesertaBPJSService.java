@@ -28,17 +28,19 @@ public class InfoPesertaBPJSService {
         GetInfoPesertaBPJSResponse pesertaBPJS = new GetInfoPesertaBPJSResponse();
         GetInfoPesertaAutodebetResponse pesertaAutodebet = new GetInfoPesertaAutodebetResponse();
         MetadataModel metadata = new MetadataModel();
-        // BPJS API
+        // BPJS InfoPesertaBPJS
         String urlExternal = "http://localhost:9090/InfoPesertaBPJS/{noka}";
+        // BPJS TambahDataAutoDebet
+        String urlInsertData = "http://localhost:9090/TambahDataAutoDebet";
         // WS GetInfoPesertaAutoDebet
         String urlInternal = "http://localhost:9090/InfoPesertaAutoDebet/{noka}";
         String errorcode;
         
-        // Hit to BPJS API
-        LOG.info("========== START Hit to BPJS API ==========");
+        // Hit to BPJS InfoPesertaBPJS
+        LOG.info("========== START Hit to BPJS InfoPesertaBPJS ==========");
         pesertaBPJS = this.restTemplate.getForObject(urlExternal, GetInfoPesertaBPJSResponse.class, noka);
         LOG.info(pesertaBPJS.toString());
-        LOG.info("========== END Hit to BPJS API ==========");
+        LOG.info("========== END Hit to BPJS InfoPesertaBPJS ==========");
 
         metadata = pesertaBPJS.getMetadata();
         errorcode = metadata.getErrorcode();

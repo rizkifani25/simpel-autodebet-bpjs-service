@@ -23,9 +23,23 @@ public class ResponseModel {
     private Integer status_;
     private String tglInput;
 
-    public void setData(Integer idhead, Integer jmlkeluarga, Integer kdasalpremi, String kdbank, String nama,
-            String namapic, String nmbank, String nmcabang, String noka, String nokapic, String nokk, String norekening,
-            String nova, Integer premi, Integer status_, String tglInput) {
+    public void setData(
+        Integer idhead,
+        Integer jmlkeluarga, 
+        Integer kdasalpremi, 
+        String kdbank, 
+        String nama,
+        String namapic, 
+        String nmbank, 
+        String nmcabang, 
+        String noka, 
+        String nokapic, 
+        String nokk, 
+        String norekening,
+        String nova, 
+        Integer premi, 
+        Integer status_, 
+        String tglInput) {
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd-mm-yyyy");
 
