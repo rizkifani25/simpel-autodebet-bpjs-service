@@ -1,4 +1,4 @@
-package com.doku.infopeserta.model.external;
+package com.doku.infopeserta.model.pesertabpjs;
 
 import lombok.Data;
 

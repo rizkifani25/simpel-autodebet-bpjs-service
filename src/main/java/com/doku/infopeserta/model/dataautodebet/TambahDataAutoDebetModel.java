@@ -1,4 +1,4 @@
-package com.doku.infopeserta.model;
+package com.doku.infopeserta.model.dataautodebet;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

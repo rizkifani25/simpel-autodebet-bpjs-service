@@ -1,12 +1,15 @@
 package com.doku.infopeserta.repository;
 
+import com.doku.infopeserta.model.dataautodebet.TambahDataAutoDebetModel;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-public interface DataAutoDebetRepository {
+public interface DataAutoDebetRepository extends JpaRepository<TambahDataAutoDebetModel, String>{
     
     @Transactional
     @Modifying

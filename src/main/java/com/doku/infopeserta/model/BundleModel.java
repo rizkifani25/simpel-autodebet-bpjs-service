@@ -1,11 +1,9 @@
-package com.doku.infopeserta.model.internal;
-
-import com.doku.infopeserta.model.MetadataModel;
+package com.doku.infopeserta.model;
 
 import lombok.Data;
 
 @Data
-public class GetInfoPesertaAutodebetResponse<T> {
+public class BundleModel<T> {
     private MetadataModel metadata;
     private T response;
 

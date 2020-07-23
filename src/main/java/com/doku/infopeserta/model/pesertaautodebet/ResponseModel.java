@@ -1,4 +1,4 @@
-package com.doku.infopeserta.model.internal;
+package com.doku.infopeserta.model.pesertaautodebet;
 
 import java.text.SimpleDateFormat;
 

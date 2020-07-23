@@ -1,11 +1,11 @@
-package com.doku.infopeserta.model.external;
+package com.doku.infopeserta.model.pesertaautodebet;
 
 import com.doku.infopeserta.model.MetadataModel;
 
 import lombok.Data;
 
 @Data
-public class GetInfoPesertaBPJSResponse<T> {
+public class GetInfoPesertaAutodebetResponse<T> {
     private MetadataModel metadata;
     private T response;
 

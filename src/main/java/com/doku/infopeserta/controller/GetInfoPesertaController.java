@@ -1,6 +1,6 @@
 package com.doku.infopeserta.controller;
 
-import com.doku.infopeserta.model.internal.GetInfoPesertaAutodebetResponse;
+import com.doku.infopeserta.model.BundleModel;
 import com.doku.infopeserta.service.InfoPesertaBPJSService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class GetInfoPesertaController {
     InfoPesertaBPJSService infoPesertaBPJSService;
 
     @GetMapping
-    public ResponseEntity<GetInfoPesertaAutodebetResponse> getController(@PathVariable("noka") String noka) {
+    public ResponseEntity<BundleModel> getController(@PathVariable("noka") String noka) {
         return new ResponseEntity<>(infoPesertaBPJSService.getInfoPesertaBPJS(noka), HttpStatus.OK);
     }
 
